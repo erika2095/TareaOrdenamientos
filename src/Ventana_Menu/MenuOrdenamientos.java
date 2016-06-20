@@ -64,6 +64,8 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Tarea Ordenamientos");
+        setBackground(new java.awt.Color(255, 204, 255));
 
         jLabel1.setText("Ingrese 10 valores:");
 
