@@ -27,6 +27,7 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jt_Ingresar1 = new javax.swing.JTextField();
         jt_Ingresar2 = new javax.swing.JTextField();
@@ -62,6 +63,9 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
         jt_Ordenar9 = new javax.swing.JTextField();
         jt_Ordenar10 = new javax.swing.JTextField();
         jComboBox1 = new javax.swing.JComboBox();
+        jLabel4 = new javax.swing.JLabel();
+
+        jLabel3.setText("jLabel3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tarea Ordenamientos");
@@ -76,6 +80,8 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
         jButton7.setText("Ordenar");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Burbuja", "Intercambio", "QuickSort", "Selección", "Shell", " " }));
+
+        jLabel4.setText("Erika");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -156,7 +162,10 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
                                 .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(330, 330, 330)))))
+                                .addGap(330, 330, 330))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jLabel4)))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -205,7 +214,9 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
                     .addComponent(jt_Ordenar8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jt_Ordenar9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jt_Ordenar10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(82, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addGap(25, 25, 25))
         );
 
         pack();
@@ -252,6 +263,8 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField jt_Ingresar1;
     private javax.swing.JTextField jt_Ingresar10;
     private javax.swing.JTextField jt_Ingresar2;
