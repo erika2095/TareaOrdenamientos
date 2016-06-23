@@ -41,56 +41,8 @@
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jt_setIngresar1" alignment="1" min="-2" pref="24" max="-2" attributes="0"/>
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                          <Component id="jt_Ordenar1" alignment="1" min="-2" pref="24" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jt_setIngresar2" pref="27" max="32767" attributes="0"/>
-                                  <Component id="jt_Ordenar2" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jt_setIngresar3" pref="25" max="32767" attributes="0"/>
-                                  <Component id="jt_Ordenar3" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jt_setIngresar4" pref="23" max="32767" attributes="0"/>
-                                  <Component id="jt_Ordenar4" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jt_setIngresar5" pref="31" max="32767" attributes="0"/>
-                                  <Component id="jt_Ordenar5" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jt_setIngresar6" pref="32" max="32767" attributes="0"/>
-                                  <Component id="jt_Ordenar6" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jt_setIngresar7" pref="27" max="32767" attributes="0"/>
-                                  <Component id="jt_Ordenar7" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jt_setIngresar8" pref="32" max="32767" attributes="0"/>
-                                  <Component id="jt_Ordenar8" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jt_setIngresar9" pref="28" max="32767" attributes="0"/>
-                                  <Component id="jt_Ordenar9" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jt_setIngresar10" pref="31" max="32767" attributes="0"/>
-                                  <Component id="jt_Ordenar10" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                               <Component id="btn_Burbuja" min="-2" max="-2" attributes="0"/>
@@ -104,6 +56,32 @@
                               <Component id="btn_Shell" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="btn_MergeSort" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jt_setIngresar2" min="-2" pref="27" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jt_setIngresar3" min="-2" pref="25" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jt_setIngresar4" min="-2" pref="23" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jt_setIngresar5" min="-2" pref="31" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jt_setIngresar6" min="-2" pref="32" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jt_setIngresar7" min="-2" pref="27" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jt_setIngresar8" min="-2" pref="32" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jt_setIngresar9" min="-2" pref="28" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jt_setIngresar10" min="-2" pref="31" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btn_Volver" min="-2" pref="50" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btn_Paso_Paso" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btn_Limpiar" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -129,11 +107,13 @@
                       <Component id="jt_Ingresar9" min="-2" pref="26" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jt_Ingresar10" min="-2" pref="29" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="btn_Guardar" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="20" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -153,9 +133,8 @@
                   <Component id="jt_Ingresar8" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jt_Ingresar9" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jt_Ingresar10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btn_Guardar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btn_Burbuja" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -165,33 +144,36 @@
                   <Component id="btn_Shell" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btn_MergeSort" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jt_setIngresar1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_setIngresar2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_setIngresar3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_setIngresar4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_setIngresar5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_setIngresar6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_setIngresar7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_setIngresar8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_setIngresar9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_setIngresar10" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jt_setIngresar1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jt_setIngresar2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jt_setIngresar3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jt_setIngresar4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jt_setIngresar5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jt_setIngresar6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jt_setIngresar7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jt_setIngresar8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jt_setIngresar9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jt_setIngresar10" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="btn_Volver" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btn_Paso_Paso" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn_Limpiar" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jt_Ordenar1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_Ordenar2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_Ordenar3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_Ordenar4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_Ordenar5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_Ordenar6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_Ordenar7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_Ordenar8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_Ordenar9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jt_Ordenar10" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="82" max="32767" attributes="0"/>
+              <EmptySpace pref="31" max="32767" attributes="0"/>
+              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -199,7 +181,7 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Ingrese 10 valores:"/>
+        <Property name="text" type="java.lang.String" value="Valores ingresados"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jt_Ingresar1">
@@ -221,11 +203,6 @@
     <Component class="javax.swing.JTextField" name="jt_Ingresar9">
     </Component>
     <Component class="javax.swing.JTextField" name="jt_Ingresar10">
-    </Component>
-    <Component class="javax.swing.JButton" name="btn_Guardar">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Guardar"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
@@ -252,26 +229,6 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jt_setIngresar10">
     </Component>
-    <Component class="javax.swing.JTextField" name="jt_Ordenar1">
-    </Component>
-    <Component class="javax.swing.JTextField" name="jt_Ordenar2">
-    </Component>
-    <Component class="javax.swing.JTextField" name="jt_Ordenar3">
-    </Component>
-    <Component class="javax.swing.JTextField" name="jt_Ordenar4">
-    </Component>
-    <Component class="javax.swing.JTextField" name="jt_Ordenar5">
-    </Component>
-    <Component class="javax.swing.JTextField" name="jt_Ordenar6">
-    </Component>
-    <Component class="javax.swing.JTextField" name="jt_Ordenar7">
-    </Component>
-    <Component class="javax.swing.JTextField" name="jt_Ordenar8">
-    </Component>
-    <Component class="javax.swing.JTextField" name="jt_Ordenar9">
-    </Component>
-    <Component class="javax.swing.JTextField" name="jt_Ordenar10">
-    </Component>
     <Component class="javax.swing.JButton" name="btn_Burbuja">
       <Properties>
         <Property name="text" type="java.lang.String" value="Burbuja"/>
@@ -284,26 +241,71 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Intercambio"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_IntercambioActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_QuickSort">
       <Properties>
         <Property name="text" type="java.lang.String" value="QuickSort"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_QuickSortActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Seleccion">
       <Properties>
         <Property name="text" type="java.lang.String" value="Seleccion"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_SeleccionActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Shell">
       <Properties>
         <Property name="text" type="java.lang.String" value="Shell"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_ShellActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn_MergeSort">
       <Properties>
         <Property name="text" type="java.lang.String" value="MergeSort"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_MergeSortActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_Volver">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/img/descarga.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_Paso_Paso">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/img/descarga (1).png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Paso"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Erika / Jaky"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btn_Limpiar">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/img/descarga (2).png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_LimpiarActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

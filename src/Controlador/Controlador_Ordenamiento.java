@@ -27,7 +27,10 @@ public class Controlador_Ordenamiento implements ActionListener
     {
         if(e.getActionCommand().equals("Burbuja"))
         {
-            System.out.println(" Burbuja\n");
+            if(e.getActionCommand().equals("Paso"))
+            {
+                
+            }
         }
     }
     

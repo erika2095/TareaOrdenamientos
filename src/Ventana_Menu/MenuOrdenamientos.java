@@ -3,6 +3,10 @@ package Ventana_Menu;
 
 import Controlador.Controlador_Ordenamiento;
 import Metodos.Burbuja;
+import Metodos.Intercambio;
+import Metodos.QuickSort;
+import Metodos.Seleccion;
+import Metodos.Shell;
 import javax.swing.JOptionPane;
 
 /**
@@ -13,8 +17,8 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
 
     Controlador_Ordenamiento controlador;
     
-    int valores;
-    int vector[];
+    int arr1 [] = new int[10], n;
+    String ax="";
     
     public MenuOrdenamientos() {
         initComponents();
@@ -23,89 +27,123 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
     
     public void introducirValores()
     {
-        for(int i = 0; i < 10; i++)
-        {
-            valores = Integer.parseInt(JOptionPane.showInputDialog("Digite su numero"));
-            vector[i] = valores;
+        for(int i=0; i<arr1.length; i++)
+        { 
+            n = Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese el numero en la posicion "+(i+1)+": ")); 
+            arr1[i]=n;
+            ax+=arr1[i]+" ";
         }
-        System.out.println(valores);
-//        Burbuja.ordBurbuja(vector);
-//        Burbuja.imprimir(vector);
+        System.out.println("Valores ingresados: "+ax);
     }
     
+    public void setValoresIntroducidos()
+    {
+        this.jt_Ingresar1.setText(""+arr1[0]);
+        this.jt_Ingresar2.setText(""+arr1[1]);
+        this.jt_Ingresar3.setText(""+arr1[2]);
+        this.jt_Ingresar4.setText(""+arr1[3]);
+        this.jt_Ingresar5.setText(""+arr1[4]);
+        this.jt_Ingresar6.setText(""+arr1[5]);
+        this.jt_Ingresar7.setText(""+arr1[6]);
+        this.jt_Ingresar8.setText(""+arr1[7]);
+        this.jt_Ingresar9.setText(""+arr1[8]);
+        this.jt_Ingresar10.setText(""+arr1[9]);
+    }
     
+    public void ordenarBurbuja()
+    {
+        System.out.println(" - Ordenamiento Burbuja - ");
+        Burbuja.ordBurbuja(arr1);
+        Burbuja.imprimir(arr1);
+        
+        this.jt_setIngresar1.setText(""+arr1[0]);
+        this.jt_setIngresar2.setText(""+arr1[1]);
+        this.jt_setIngresar3.setText(""+arr1[2]);
+        this.jt_setIngresar4.setText(""+arr1[3]);
+        this.jt_setIngresar5.setText(""+arr1[4]);
+        this.jt_setIngresar6.setText(""+arr1[5]);
+        this.jt_setIngresar7.setText(""+arr1[6]);
+        this.jt_setIngresar8.setText(""+arr1[7]);
+        this.jt_setIngresar9.setText(""+arr1[8]);
+        this.jt_setIngresar10.setText(""+arr1[9]);
+    }
     
+    public void ordenarIntercambio()
+    {
+        System.out.println(" - Ordenamiento Intercambio - ");
+        Intercambio.ordIntercambio(arr1);
+        Intercambio.imprimir(arr1);
+        
+        this.jt_setIngresar1.setText(""+arr1[0]);
+        this.jt_setIngresar2.setText(""+arr1[1]);
+        this.jt_setIngresar3.setText(""+arr1[2]);
+        this.jt_setIngresar4.setText(""+arr1[3]);
+        this.jt_setIngresar5.setText(""+arr1[4]);
+        this.jt_setIngresar6.setText(""+arr1[5]);
+        this.jt_setIngresar7.setText(""+arr1[6]);
+        this.jt_setIngresar8.setText(""+arr1[7]);
+        this.jt_setIngresar9.setText(""+arr1[8]);
+        this.jt_setIngresar10.setText(""+arr1[9]);
+    }
     
+    public void ordenarQuickSort()
+    {
+        System.out.println(" - Ordenamiento QuickSort - ");
+        QuickSort.quicksort(arr1, 0, arr1.length-1);
+        QuickSort.imprimir(arr1);
+        
+        this.jt_setIngresar1.setText(""+arr1[0]);
+        this.jt_setIngresar2.setText(""+arr1[1]);
+        this.jt_setIngresar3.setText(""+arr1[2]);
+        this.jt_setIngresar4.setText(""+arr1[3]);
+        this.jt_setIngresar5.setText(""+arr1[4]);
+        this.jt_setIngresar6.setText(""+arr1[5]);
+        this.jt_setIngresar7.setText(""+arr1[6]);
+        this.jt_setIngresar8.setText(""+arr1[7]);
+        this.jt_setIngresar9.setText(""+arr1[8]);
+        this.jt_setIngresar10.setText(""+arr1[9]);
+    }
     
+    public void ordenarSeleccion()
+    {
+        System.out.println(" - Ordenamiento Seleccion - ");
+        Seleccion.ordSeleccion(arr1);
+        Seleccion.imprimir(arr1);
+        
+        this.jt_setIngresar1.setText(""+arr1[0]);
+        this.jt_setIngresar2.setText(""+arr1[1]);
+        this.jt_setIngresar3.setText(""+arr1[2]);
+        this.jt_setIngresar4.setText(""+arr1[3]);
+        this.jt_setIngresar5.setText(""+arr1[4]);
+        this.jt_setIngresar6.setText(""+arr1[5]);
+        this.jt_setIngresar7.setText(""+arr1[6]);
+        this.jt_setIngresar8.setText(""+arr1[7]);
+        this.jt_setIngresar9.setText(""+arr1[8]);
+        this.jt_setIngresar10.setText(""+arr1[9]);
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-//    public void escucharComboBox()
-//    {
-//        this.btn_Burbuja.addActionListener(controlador);
-//        this.btn_Intercambio.addActionListener(controlador);
-//        this.btn_QuickSort.addActionListener(controlador);
-//        this.btn_Seleccion.addActionListener(controlador);
-//        this.btn_Shell.addActionListener(controlador);
-//    }
-//        
-//    public void limpiarJtEntradas()
-//    {
-//        this.jt_Ingresar1.setText(" ");
-//        this.jt_Ingresar2.setText(" ");
-//        this.jt_Ingresar3.setText(" ");
-//        this.jt_Ingresar4.setText(" ");
-//        this.jt_Ingresar5.setText(" ");
-//        this.jt_Ingresar6.setText(" ");
-//        this.jt_Ingresar7.setText(" ");
-//        this.jt_Ingresar8.setText(" ");
-//        this.jt_Ingresar9.setText(" ");
-//        this.jt_Ingresar10.setText(" ");
-//    }
-//    
-//    public long[] labelIngresados()
-//    {
-//        valores[0] = Integer.parseInt(this.jt_Ingresar1.getText());
-//        valores[1] = Integer.parseInt(this.jt_Ingresar2.getText());
-//        valores[2] = Integer.parseInt(this.jt_Ingresar3.getText());
-//        valores[3] = Integer.parseInt(this.jt_Ingresar4.getText());
-//        valores[4] = Integer.parseInt(this.jt_Ingresar5.getText());
-//        valores[5] = Integer.parseInt(this.jt_Ingresar6.getText());
-//        valores[6] = Integer.parseInt(this.jt_Ingresar7.getText());
-//        valores[7] = Integer.parseInt(this.jt_Ingresar8.getText());
-//        valores[8] = Integer.parseInt(this.jt_Ingresar7.getText());
-//        valores[9] = Integer.parseInt(this.jt_Ingresar10.getText());
-//        
-//        return valores;
-//    }
-//    
-//    public void setLabel()
-//    {
-//        this.jt_setIngresar1.setText(jt_Ingresar1.getText());
-//        this.jt_setIngresar2.setText(jt_Ingresar2.getText());
-//        this.jt_setIngresar3.setText(jt_Ingresar3.getText());
-//        this.jt_setIngresar4.setText(jt_Ingresar4.getText());
-//        this.jt_setIngresar5.setText(jt_Ingresar5.getText());
-//        this.jt_setIngresar6.setText(jt_Ingresar6.getText());
-//        this.jt_setIngresar7.setText(jt_Ingresar7.getText());
-//        this.jt_setIngresar8.setText(jt_Ingresar8.getText());
-//        this.jt_setIngresar9.setText(jt_Ingresar9.getText());
-//        this.jt_setIngresar10.setText(jt_Ingresar10.getText());
-//    }
+    public void ordenarShell()
+    {
+        System.out.println(" - Ordenamiento Shell - ");
+        Shell.ordenacionShell(arr1);
+        Shell.imprimir(arr1);
+        
+        this.jt_setIngresar1.setText(""+arr1[0]);
+        this.jt_setIngresar2.setText(""+arr1[1]);
+        this.jt_setIngresar3.setText(""+arr1[2]);
+        this.jt_setIngresar4.setText(""+arr1[3]);
+        this.jt_setIngresar5.setText(""+arr1[4]);
+        this.jt_setIngresar6.setText(""+arr1[5]);
+        this.jt_setIngresar7.setText(""+arr1[6]);
+        this.jt_setIngresar8.setText(""+arr1[7]);
+        this.jt_setIngresar9.setText(""+arr1[8]);
+        this.jt_setIngresar10.setText(""+arr1[9]);
+    }
+
+    public void ordenarMezcla()
+    {
+        System.out.println(" - Ordenamiento MergeShort - ");
+    }
     
     
     @SuppressWarnings("unchecked")
@@ -124,7 +162,6 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
         jt_Ingresar8 = new javax.swing.JTextField();
         jt_Ingresar9 = new javax.swing.JTextField();
         jt_Ingresar10 = new javax.swing.JTextField();
-        btn_Guardar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jt_setIngresar1 = new javax.swing.JTextField();
         jt_setIngresar2 = new javax.swing.JTextField();
@@ -136,22 +173,16 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
         jt_setIngresar8 = new javax.swing.JTextField();
         jt_setIngresar9 = new javax.swing.JTextField();
         jt_setIngresar10 = new javax.swing.JTextField();
-        jt_Ordenar1 = new javax.swing.JTextField();
-        jt_Ordenar2 = new javax.swing.JTextField();
-        jt_Ordenar3 = new javax.swing.JTextField();
-        jt_Ordenar4 = new javax.swing.JTextField();
-        jt_Ordenar5 = new javax.swing.JTextField();
-        jt_Ordenar6 = new javax.swing.JTextField();
-        jt_Ordenar7 = new javax.swing.JTextField();
-        jt_Ordenar8 = new javax.swing.JTextField();
-        jt_Ordenar9 = new javax.swing.JTextField();
-        jt_Ordenar10 = new javax.swing.JTextField();
         btn_Burbuja = new javax.swing.JButton();
         btn_Intercambio = new javax.swing.JButton();
         btn_QuickSort = new javax.swing.JButton();
         btn_Seleccion = new javax.swing.JButton();
         btn_Shell = new javax.swing.JButton();
         btn_MergeSort = new javax.swing.JButton();
+        btn_Volver = new javax.swing.JButton();
+        btn_Paso_Paso = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        btn_Limpiar = new javax.swing.JButton();
 
         jLabel3.setText("jLabel3");
 
@@ -159,9 +190,7 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
         setTitle("Tarea Ordenamientos");
         setBackground(new java.awt.Color(255, 204, 255));
 
-        jLabel1.setText("Ingrese 10 valores:");
-
-        btn_Guardar.setText("Guardar");
+        jLabel1.setText("Valores ingresados");
 
         jLabel2.setText("Opción Ordenar:");
 
@@ -173,14 +202,53 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
         });
 
         btn_Intercambio.setText("Intercambio");
+        btn_Intercambio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_IntercambioActionPerformed(evt);
+            }
+        });
 
         btn_QuickSort.setText("QuickSort");
+        btn_QuickSort.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_QuickSortActionPerformed(evt);
+            }
+        });
 
         btn_Seleccion.setText("Seleccion");
+        btn_Seleccion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_SeleccionActionPerformed(evt);
+            }
+        });
 
         btn_Shell.setText("Shell");
+        btn_Shell.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ShellActionPerformed(evt);
+            }
+        });
 
         btn_MergeSort.setText("MergeSort");
+        btn_MergeSort.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_MergeSortActionPerformed(evt);
+            }
+        });
+
+        btn_Volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/descarga.png"))); // NOI18N
+
+        btn_Paso_Paso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/descarga (1).png"))); // NOI18N
+        btn_Paso_Paso.setText("Paso");
+
+        jLabel4.setText("Erika / Jaky");
+
+        btn_Limpiar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/descarga (2).png"))); // NOI18N
+        btn_Limpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_LimpiarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -192,46 +260,8 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jt_setIngresar1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2)
-                            .addComponent(jt_Ordenar1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel2))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jt_setIngresar2, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
-                                    .addComponent(jt_Ordenar2))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jt_setIngresar3, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
-                                    .addComponent(jt_Ordenar3))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jt_setIngresar4, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
-                                    .addComponent(jt_Ordenar4))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jt_setIngresar5, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
-                                    .addComponent(jt_Ordenar5))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jt_setIngresar6, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                                    .addComponent(jt_Ordenar6))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jt_setIngresar7, javax.swing.GroupLayout.DEFAULT_SIZE, 27, Short.MAX_VALUE)
-                                    .addComponent(jt_Ordenar7))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jt_setIngresar8, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
-                                    .addComponent(jt_Ordenar8))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jt_setIngresar9, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
-                                    .addComponent(jt_Ordenar9))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jt_setIngresar10, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
-                                    .addComponent(jt_Ordenar10)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(32, 32, 32)
                                 .addComponent(btn_Burbuja)
@@ -244,7 +274,32 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btn_Shell)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn_MergeSort))))
+                                .addComponent(btn_MergeSort))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jt_setIngresar2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jt_setIngresar3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jt_setIngresar4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jt_setIngresar5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jt_setIngresar6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jt_setIngresar7, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jt_setIngresar8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jt_setIngresar9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jt_setIngresar10, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn_Volver, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn_Paso_Paso)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btn_Limpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
@@ -266,10 +321,11 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jt_Ingresar9, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jt_Ingresar10, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btn_Guardar)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jt_Ingresar10, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(20, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel4))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -286,9 +342,8 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
                     .addComponent(jt_Ingresar7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jt_Ingresar8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jt_Ingresar9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_Ingresar10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_Guardar))
-                .addGap(39, 39, 39)
+                    .addComponent(jt_Ingresar10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(btn_Burbuja)
@@ -297,31 +352,30 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
                     .addComponent(btn_Seleccion)
                     .addComponent(btn_Shell)
                     .addComponent(btn_MergeSort))
-                .addGap(53, 53, 53)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jt_setIngresar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_setIngresar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_setIngresar3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_setIngresar4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_setIngresar5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_setIngresar6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_setIngresar7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_setIngresar8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_setIngresar9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_setIngresar10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jt_Ordenar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_Ordenar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_Ordenar3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_Ordenar4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_Ordenar5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_Ordenar6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_Ordenar7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_Ordenar8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_Ordenar9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jt_Ordenar10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(82, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jt_setIngresar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jt_setIngresar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jt_setIngresar3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jt_setIngresar4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jt_setIngresar5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jt_setIngresar6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jt_setIngresar7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jt_setIngresar8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jt_setIngresar9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jt_setIngresar10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(btn_Volver))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btn_Paso_Paso)
+                            .addComponent(btn_Limpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addComponent(jLabel4))
         );
 
         pack();
@@ -329,8 +383,47 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
 
     private void btn_BurbujaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_BurbujaActionPerformed
         // TODO add your handling code here:
-        introducirValores();
+        ordenarBurbuja();
     }//GEN-LAST:event_btn_BurbujaActionPerformed
+
+    private void btn_IntercambioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_IntercambioActionPerformed
+        // TODO add your handling code here:
+        ordenarIntercambio();
+    }//GEN-LAST:event_btn_IntercambioActionPerformed
+
+    private void btn_QuickSortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_QuickSortActionPerformed
+        // TODO add your handling code here:
+        ordenarQuickSort();
+    }//GEN-LAST:event_btn_QuickSortActionPerformed
+
+    private void btn_SeleccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SeleccionActionPerformed
+        // TODO add your handling code here:
+        ordenarSeleccion();
+    }//GEN-LAST:event_btn_SeleccionActionPerformed
+
+    private void btn_ShellActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ShellActionPerformed
+        // TODO add your handling code here:
+        ordenarShell();
+    }//GEN-LAST:event_btn_ShellActionPerformed
+
+    private void btn_MergeSortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_MergeSortActionPerformed
+        // TODO add your handling code here:
+        ordenarMezcla();
+    }//GEN-LAST:event_btn_MergeSortActionPerformed
+
+    private void btn_LimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LimpiarActionPerformed
+        // TODO add your handling code here:
+        this.jt_setIngresar1.setText(" ");
+        this.jt_setIngresar2.setText(" ");
+        this.jt_setIngresar3.setText(" ");
+        this.jt_setIngresar4.setText(" ");
+        this.jt_setIngresar5.setText(" ");
+        this.jt_setIngresar6.setText(" ");
+        this.jt_setIngresar7.setText(" ");
+        this.jt_setIngresar8.setText(" ");
+        this.jt_setIngresar9.setText(" ");
+        this.jt_setIngresar10.setText(" ");
+    }//GEN-LAST:event_btn_LimpiarActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -361,6 +454,7 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
             public void run() {
                 MenuOrdenamientos ventana = new MenuOrdenamientos();
                 ventana.introducirValores();
+                ventana.setValoresIntroducidos();
                 ventana.setVisible(true);
             }
         });
@@ -368,15 +462,18 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_Burbuja;
-    private javax.swing.JButton btn_Guardar;
     private javax.swing.JButton btn_Intercambio;
+    private javax.swing.JButton btn_Limpiar;
     private javax.swing.JButton btn_MergeSort;
+    private javax.swing.JButton btn_Paso_Paso;
     private javax.swing.JButton btn_QuickSort;
     private javax.swing.JButton btn_Seleccion;
     private javax.swing.JButton btn_Shell;
+    private javax.swing.JButton btn_Volver;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField jt_Ingresar1;
     private javax.swing.JTextField jt_Ingresar10;
     private javax.swing.JTextField jt_Ingresar2;
@@ -387,16 +484,6 @@ public class MenuOrdenamientos extends javax.swing.JFrame {
     private javax.swing.JTextField jt_Ingresar7;
     private javax.swing.JTextField jt_Ingresar8;
     private javax.swing.JTextField jt_Ingresar9;
-    private javax.swing.JTextField jt_Ordenar1;
-    private javax.swing.JTextField jt_Ordenar10;
-    private javax.swing.JTextField jt_Ordenar2;
-    private javax.swing.JTextField jt_Ordenar3;
-    private javax.swing.JTextField jt_Ordenar4;
-    private javax.swing.JTextField jt_Ordenar5;
-    private javax.swing.JTextField jt_Ordenar6;
-    private javax.swing.JTextField jt_Ordenar7;
-    private javax.swing.JTextField jt_Ordenar8;
-    private javax.swing.JTextField jt_Ordenar9;
     private javax.swing.JTextField jt_setIngresar1;
     private javax.swing.JTextField jt_setIngresar10;
     private javax.swing.JTextField jt_setIngresar2;
