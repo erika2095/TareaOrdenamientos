@@ -2,7 +2,7 @@ package Metodos;
 
 
 public class Burbuja {
-    public static void ordBurbuja (long a[])
+    public static void ordBurbuja (int a[])
     {
         int interruptor = 1;
         int pasada, j;
@@ -15,7 +15,7 @@ public class Burbuja {
             {
                 if(a[j] > a[j+1])
                 {
-                    long aux;
+                    int aux;
                     interruptor = 1;
                     aux = a[j];
                     a[j] = a[j+1];
@@ -25,7 +25,7 @@ public class Burbuja {
         }
     }
     
-    public static void imprimir(long a[])
+    public static void imprimir(int a[])
     {
         for(int i =  0; i < a.length; i++)
         {
